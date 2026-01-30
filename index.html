@@ -6,26 +6,14 @@
     <title>Registro de Usuarios - Sistema Beta v1.2.3</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- codigo viejo del diseño anterior -->
-    <!-- <style>
-        body {
-            background-color: #f0f0f0;
-        }
-        .old-header {
-            background-color: #ff6b6b;
-            color: white;
-        }
-        .deprecated-button {
-            background-color: #4ecdc4;
-        }
-    </style> -->
+    <!-- Eliminé el codigo viejo del diseño anterior -->
 </head>
 <body class="bg-light">
     <div class="container py-5">
         <div class="card shadow-lg mb-4">
             <div class="card-header bg-primary text-white">
                 <h2 class="mb-0">📝 Registro de Usuarios</h2>
-                <small>Sistema de Base de Datos v1.2.3 - Puerto 8080 - MySQL 5.7</small>
+                <!-- Eliminé la linea que muestra la información del servidor -->
             </div>
             <div class="card-body">
                 <form id="registroForm">
@@ -58,18 +46,17 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="email" class="form-label">Correo Electrónico</label>
-                            <input type="text" class="form-control" id="email" placeholder="ejemplo@correo.com">
+                            <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com"> <!-- Cambié el tipo de dato del correo de text a email -->
                         </div>
                     </div>
 
-                    <!--
+                    <!-- Descomenté el código funcional del campo de contraseña -->
                     <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="password">
                         </div>
                     </div>
-                    -->
 
                     <div class="d-grid gap-2">
                         <button type="submit" class="btn btn-primary btn-lg">
@@ -98,7 +85,7 @@
                                 </tr>
                             </thead>
                             <tbody id="tablaRegistros">
-                                <!-- Los registros se insertarán aquí -->
+                                <!-- Quité el comentario de la tabla -->
                             </tbody>
                         </table>
                     </div>
